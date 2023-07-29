@@ -26,4 +26,8 @@ bool	ft_isspace(int c);
 bool	ft_isprint(int c);
 bool	ft_isinset(int c, const char *set);
 
+/* Strings */
+
+int		ft_stoi(std::string str);
+
 #endif

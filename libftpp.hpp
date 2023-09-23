@@ -12,6 +12,7 @@
 
 #ifndef LIBFTPP_HPP
 # define LIBFTPP_HPP
+# include <iostream>
 
 /* Characters */
 
@@ -23,14 +24,29 @@ bool	ft_isupper(int c);
 bool	ft_isalnum(int c);
 bool	ft_isspace(int c);
 bool	ft_isprint(int c);
-bool	ft_isinset(int c, const char *set);
+bool	isInSet(int c, const char *set);
+bool	isInSet(int c, const std::string set);
+bool	isInSet(wint_t c, const std::wstring set);
 
 /* Strings */
 
-int		ft_stoi(std::string str);
+int				ft_stoi(char *str);
+int				ft_stoi(std::string str);
+int				ft_stoi(std::wstring str);
+std::wstring	s2ws(const std::string& str);
+std::string		ws2s(const std::wstring& wstr);
 
 /* Files */
 
-bool	is_file_empty(std::ifstream &file);
+bool			doesFileExist(std::string filename);
+bool			doesFileExist(std::wstring filename);
+bool			isFileEmpty(std::ifstream &file);
+bool			isFileEmpty(std::wifstream &file);
+std::ifstream	&goToLine(std::ifstream &file, unsigned int line);
+std::wifstream	&goToLine(std::wifstream &file, unsigned int line);
+
+/* Math */
+
+int	randomInt(int min, int max);
 
 #endif

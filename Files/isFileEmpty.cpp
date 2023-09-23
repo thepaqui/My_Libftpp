@@ -1,16 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.cpp                                     :+:      :+:    :+:   */
+/*   isFileEmpty.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/27 20:32:10 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/07/27 20:32:10 by thepaqui         ###   ########.fr       */
+/*   Created: 2023/07/30 15:38:10 by thepaqui          #+#    #+#             */
+/*   Updated: 2023/07/30 15:38:10 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-bool	ft_isascii(int c)
+#include <fstream>
+
+bool	isFileEmpty(std::ifstream &file)
 {
-	return c >= 0 && c <= 127;
+	return (static_cast<int>(file.peek()) == std::ifstream::traits_type::eof());
+}
+
+bool	isFileEmpty(std::wifstream &file)
+{
+	return (static_cast<int>(file.peek()) == std::ifstream::traits_type::eof());
 }

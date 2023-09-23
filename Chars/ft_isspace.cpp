@@ -14,7 +14,5 @@
 
 bool	ft_isspace(int c)
 {
-	if (ft_isinset(c, " \n\t\v\r\f"))
-		return (true);
-	return (false);
+	return isInSet(c, " \n\t\v\r\f");
 }

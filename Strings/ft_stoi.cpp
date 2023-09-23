@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 # include <iostream>
+# include "../libftpp.hpp"
 
 static int	ft_atoi(const char *str)
 {
@@ -40,7 +41,17 @@ static int	ft_atoi(const char *str)
 	return (res * sign);
 }
 
+int	ft_stoi(char *str)
+{
+	return ft_atoi(str);
+}
+
 int	ft_stoi(std::string str)
 {
-	return (ft_atoi(str.c_str()));
+	return ft_atoi(str.c_str());
+}
+
+int	ft_stoi(std::wstring str)
+{
+	return ft_atoi(ws2s(str).c_str());
 }

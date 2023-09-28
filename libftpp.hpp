@@ -49,4 +49,9 @@ std::wifstream	&goToLine(std::wifstream &file, unsigned int line);
 
 int	randomInt(int min, int max);
 
+/* Other */
+
+uintptr_t	serialize(void *ptr);
+void		*deserialize(uintptr_t raw);
+
 #endif

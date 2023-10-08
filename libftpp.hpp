@@ -54,4 +54,9 @@ int	randomInt(int min, int max);
 uintptr_t	serialize(void *ptr);
 void		*deserialize(uintptr_t raw);
 
+/* Win32 API */
+#include <windows.h>
+
+void	PaintLine(HDC hdc, int startx, int starty, int endx, int endy, unsigned int width, COLORREF color);
+
 #endif

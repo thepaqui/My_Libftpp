@@ -14,13 +14,13 @@
 #include <sys/stat.h>
 #include "../libftpp.hpp"
 
-bool	doesFileExist(std::string filename)
+bool	doesFileExist(const std::string filename)
 {
 	struct stat	sb;
 	return (stat(filename.c_str(), &sb) == 0);
 }
 
-bool	doesFileExist(std::wstring filename)
+bool	doesFileExist(const std::wstring filename)
 {
 	struct stat	sb;
 	return (stat(ws2s(filename).c_str(), &sb) == 0);

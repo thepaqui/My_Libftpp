@@ -22,7 +22,7 @@ void	printInput(std::ostream &out, std::istream &in)
 	std::string		line;
 	do
 	{
-		getline(in, line);
+		std::getline(in, line);
 		out << line << std::endl;
 	}
 	while (!in.eof());

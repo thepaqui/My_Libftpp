@@ -44,6 +44,10 @@ bool			isFileEmpty(std::ifstream &file);
 bool			isFileEmpty(std::wifstream &file);
 std::ifstream	&goToLine(std::ifstream &file, unsigned int line);
 std::wifstream	&goToLine(std::wifstream &file, unsigned int line);
+void			printInput(std::ostream &out, std::istream &in);
+void			printInput(std::istream &in);
+void			printInput(std::ostream &out, const std::string inputFileName);
+void			printInput(const std::string inputFileName);
 
 /* Math */
 
@@ -56,6 +60,7 @@ void		*deserialize(uintptr_t raw);
 
 /* Win32 API */
 #include <windows.h>
+//add -mwindows to compilation flags
 
 void	PaintLine(HDC hdc, int startx, int starty, int endx, int endy, unsigned int width, COLORREF color);
 

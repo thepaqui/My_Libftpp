@@ -12,6 +12,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <string>
 
 // prints the contents of in to out
 void	printInput(std::ostream &out, std::istream &in)

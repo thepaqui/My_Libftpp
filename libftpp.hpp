@@ -57,6 +57,7 @@ int	randomInt(int min, int max);
 
 uintptr_t	serialize(void *ptr);
 void		*deserialize(uintptr_t raw);
+void		ft_sleep(double seconds);
 
 /* Win32 API */
 #include <windows.h>

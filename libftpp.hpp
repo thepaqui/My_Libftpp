@@ -14,6 +14,10 @@
 # define LIBFTPP_HPP
 # include <iostream>
 
+/* Classes */
+
+# include "Classes/Timer.hpp"
+
 /* Characters */
 
 bool	ft_isascii(int c);
@@ -58,8 +62,10 @@ int	randomInt(int min, int max);
 uintptr_t	serialize(void *ptr);
 void		*deserialize(uintptr_t raw);
 void		ft_sleep(double seconds);
+//void		ft_nsleep(long long int nanoseconds);
 
 /* Win32 API */
+
 #include <windows.h>
 //add -mwindows to compilation flags
 

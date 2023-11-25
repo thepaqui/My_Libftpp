@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include <iostream>
-# include "../libftpp.hpp"
+#include <iostream>
 
 static int	ft_atoi(const char *str)
 {

@@ -6,7 +6,7 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 20:07:38 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/07/27 20:07:38 by thepaqui         ###   ########.fr       */
+/*   Updated: 2024/03/23 18:41:07 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ bool	isInSet(wint_t c, const std::wstring set);
 /* Strings */
 
 int				ft_stoi(char *str);
-int				ft_stoi(std::string str);
-int				ft_stoi(std::wstring str);
+int				ft_stoi(std::string& str);
+int				ft_stoi(std::wstring& str);
 std::wstring	s2ws(const std::string& str);
 std::string		ws2s(const std::wstring& wstr);
 

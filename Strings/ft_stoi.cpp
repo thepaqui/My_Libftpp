@@ -6,7 +6,7 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/29 19:20:14 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/07/29 19:20:14 by thepaqui         ###   ########.fr       */
+/*   Updated: 2024/03/23 18:40:58 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,12 +45,12 @@ int	ft_stoi(char *str)
 	return ft_atoi(str);
 }
 
-int	ft_stoi(std::string str)
+int	ft_stoi(std::string& str)
 {
 	return ft_atoi(str.c_str());
 }
 
-int	ft_stoi(std::wstring str)
+int	ft_stoi(std::wstring& str)
 {
 	return ft_atoi(ws2s(str).c_str());
 }

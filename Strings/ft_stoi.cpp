@@ -40,17 +40,17 @@ static int	ft_atoi(const char *str)
 	return (res * sign);
 }
 
-int	ft_stoi(char *str)
+int	ft_stoi(const char *str)
 {
 	return ft_atoi(str);
 }
 
-int	ft_stoi(std::string& str)
+int	ft_stoi(const std::string& str)
 {
 	return ft_atoi(str.c_str());
 }
 
-int	ft_stoi(std::wstring& str)
+int	ft_stoi(const std::wstring& str)
 {
 	return ft_atoi(ws2s(str).c_str());
 }

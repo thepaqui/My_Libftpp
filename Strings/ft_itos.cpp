@@ -13,7 +13,7 @@
 #include <iostream>
 #include <sstream>
 
-std::string	ft_itos(int value)
+std::string	ft_itos(const int value)
 {
 	std::stringstream	stream;
 	stream << value;
